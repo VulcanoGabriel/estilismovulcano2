@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: gotu;
+  src: url(../resources/fonts/gotu/Gotu-Regular.ttf); }
+
+@keyframes logo1 {
+  0% {
+    width: 50px;
+    height: 50px; }
+  25% {
+    width: 55px;
+    height: 55px; }
+  50% {
+    width: 60px;
+    height: 60px; }
+  75% {
+    width: 55px;
+    height: 55px; }
+  100% {
+    width: 50px;
+    height: 50px; } }
+
+.background {
+  background-image: url(../resources/img/back5.jpg);
+  background-position: center;
+  background-size: cover; }
+  .background .gridmenu {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .background .gridmenu .banner {
+      grid-column: 2/8;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      border-style: solid; }
+    .background .gridmenu .logoredondo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: inline-block;
+      display: flex;
+      position: fixed;
+      top: 30px;
+      left: 30px;
+      animation-name: logo1;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-delay: 5s;
+      animation-timing-function: ease-in; }
+    .background .gridmenu .menu {
+      height: 30%;
+      width: 100%;
+      background-image: url(../resources/img/back2.jpg);
+      background-image: linear-gradient(to right, #CAC531, #F3F9A7);
+      opacity: 70%;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      grid-row: 2/3;
+      grid-column: 1/9;
+      border-style: double; }
+      .background .gridmenu .menu li {
+        list-style: none; }
+        .background .gridmenu .menu li a {
+          text-align: center;
+          font-size: 35px;
+          font-family: gotu;
+          text-decoration: none;
+          color: black;
+          cursor: pointer;
+          transition: font-size 2s; }
+          .background .gridmenu .menu li a:hover {
+            font-size: 55px; }
+  .background .main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+    .background .main .portada {
+      font-family: gotu;
+      font-size: 45px;
+      color: white;
+      grid-column: 3/8;
+      grid-row: 0/3; }
+  .background .mainlista .card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-image: url(../resources/img/back2.jpg);
+    font-family: gotu; }
+    .background .mainlista .card a {
+      background-color: black;
+      border-color: black; }
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, 1fr); }
+  .footer .redes1 img {
+    width: 40px;
+    height: 40px;
+    grid-column: 1/2; }
+  .footer .redes2 img {
+    width: 40px;
+    height: 40px;
+    grid-column: 0/1; }
+  .footer .footertexto {
+    font-family: gotu;
+    font-size: 30px;
+    color: white;
+    grid-column: 2/8;
+    text-align: center; }
