@@ -1,0 +1,10 @@
+@import "../elementos/map";
+
+.trabajos img {
+    
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: map-get($estilo_trabajos, ancho);
+    max-height: map-get($estilo_trabajos, alto);
+}

@@ -1,0 +1,24 @@
+.tarifas {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+
+    .tarifaslista {
+        background-image: url(../resources/img/back2.jpg);
+        list-style: none;
+        font-size: 40px;
+        font-family: gotu;
+        grid-column: 3/7;
+        grid-row: 1/2;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tarifasfoto {
+        width: 100%;
+        grid-column: 2/8;
+        grid-row: 3/8;
+    }
+
+}
+
